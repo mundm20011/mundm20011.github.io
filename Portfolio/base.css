@@ -1,7 +1,7 @@
 /* color palette */
 :root {
     --white: #ffffff;
-    --white-soft: #efefef;
+    --white-soft: #dddddd;
 
     --black: #181818;
     --black-soft: #242424;
@@ -10,7 +10,7 @@
     --theme2: #800080;
 
     --text-light-1: var(--black);
-    --text-dark-1: var(--white);
+    --text-dark-1: var(--white-soft);
 }
 
 /** SEMANTIC COLORS **/

@@ -1,110 +1,114 @@
-/* @media screen and (min-width: 640px) { */
+:root {
+    font-family: sans-serif;
+    font-size: var(--size-m);
+}
+html {
+    line-height: var(--size-l);
+}
+
+body{
+    font-family: Helvetica, sans-serif, fantasy;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px; /* 16px */
+    background-color: var(--c-bg);
+    color: var(--c-text);
+    margin: auto;
+    padding: var(--padding-l);
+}
+
+header {
+    border-bottom: solid var(--size-s) var(--underline);
+}
+
+main {
+    border-bottom: solid var(--size-s) var(--underline);
+}
+
+td{
+    padding: var(--padding-s);
+}
+li {
+    border: solid;
+    border-color: var(--underline);
+}
+
+ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: var(--spacing-2);
+    padding: var(--padding-s);
+}
+div.hoernli{
+    padding: var(--padding-l);
+}
+div.mitte{
+    display: flex;
+    vertical-align: top;
+}
+
+.title-underline {
+    border-bottom: solid var(--size-s) var(--underline);
+}
+
+h3 { 
+    border-bottom-width: var(--size-s);
+}
+
+.recipe {
+    display: flex;
+}
+
+.recipe-text {
+    flex: 1;
+}
+
+.recipe-image {
+    flex: 1;
+    contain: content;
+}
+
+.recipe-image img {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.setting {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: end;
+}
+
+a {
+    color: var(--c-text);
+    text-decoration: none;
+    cursor: pointer;
+    display: grid;
+}
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+.project > a {
+    border-bottom: solid;
+    border-color: var(--underline);
+}
+@media screen and (max-width: 640px) {
 /* @media screen and (min-width: 9999px) { */
-    :root {
-        font-family: sans-serif;
-        font-size: var(--size-m);
-    }
-    html {
-        line-height: var(--size-l);
-    }
-    
-    body{
-        font-family: Helvetica, sans-serif, fantasy;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 16px; /* 16px */
-        background-color: var(--c-bg);
-        color: var(--c-text);
-        margin: auto;
-        padding: var(--padding-l);
-    }
-    
-    header {
-        border-bottom: solid var(--size-s) var(--underline);
-    }
-    
-    main {
-        border-bottom: solid var(--size-s) var(--underline);
-    }
-    
-    td{
-        padding: var(--padding-s);
-    }
-    li {
-        border: solid;
-        border-color: var(--underline);
-    }
-    
-    ul {
-        list-style-type: none;
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: var(--spacing-2);
-        padding: var(--padding-s);
-    }
-    div.hoernli{
-        padding: var(--padding-l);
-    }
-    div.mitte{
-        display: flex;
-        vertical-align: top;
-    }
-    
-    .title-underline {
-        border-bottom: solid var(--size-s) var(--underline);
-    }
-    
-    h3 { 
-        border-bottom-width: var(--size-s);
-    }
-    
-    .recipe {
-        display: flex;
-    }
-    
-    .recipe-text {
-        flex: 1;
-    }
-    
-    .recipe-image {
-        flex: 1;
-        contain: content;
-    }
-    
-    .recipe-image img {
-        width: 100%;
-    }
-    
-    img {
-        width: 100%;
-        height: auto;
-    }
-    
-    nav {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-content: start;
-    }
-    
-    footer nav {
-        display: grid;
-        grid-template-columns: auto auto auto;
-    }
-    
-    .setting {
-        display: grid;
-        grid-template-columns: auto auto;
-        justify-self: end;
-    }
-    
-    a {
-        color: var(--c-text);
-        text-decoration: none;
-        cursor: pointer;
-        display: grid;
-    }
-    a:hover {
-        color: purple;
-        text-decoration: underline;
-    }
-/* } */
+}
