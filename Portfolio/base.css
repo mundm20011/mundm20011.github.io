@@ -1,106 +1,74 @@
+/* color palette */
 :root {
-    font-family: sans-serif;
-    font-size: 1em;
-}
-html {
-    line-height: 1.5em;
+    --white: #ffffff;
+
+    --black: #181818;
+
+    --theme: #ffa500;
+    --theme2: #800080;
+
+    --text-light-1: #2c3e50;
+    --text-dark-1: var(--white);
 }
 
-body{
-    font-family: Helvetica, sans-serif, fantasy;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1em; /* 16px */
-    background: floralwhite;
-    margin: auto;
-    padding: 2em;
+/** SEMANTIC COLORS **/
+:root {
+    /* Light Theme (default) */
+    --c-bg: var(--white);
+
+    --c-heading: var(--text-light-1);
+    --c-text: var(--text-light-1);
+    --underlinge: var(--theme)
 }
 
-header {
-    border-bottom: solid 0.2em orange;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --c-bg: var(--black);
+        
+        --c-heading: var(--text-dark-1);
+        --c-text: var(--text-dark-1);
+        --underlinge: var(--theme2)
+    }
 }
 
-main {
-    border-bottom: solid 0.2em orange;
-}
+/** SPACING VARIABLES **/
+:root {
+    --section-gap: 160px;
+    /* For the homepage icons from the vue template */
 
-td{
-    padding: 0.3em;
-}
-li {
-    border: solid;
-    border-color: orange;
-}
+    /* For header, footer, main, etc. */
+    --content-width: 1500px;
+    --content-padding-h: 2rem;
+    /* Horizontal padding */
 
-ul {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5px;
-    padding: 0em;
-}
-div.hoernli{
-    padding: 1.5em;
-}
-div.mitte{
-    display: flex;
-    vertical-align: top;
-}
+    --size-s: 0.5rem;
+    --size-m: 1rem;
+    --size-l: 1.5rem;
+    --size-xl: 3rem;
 
-.title-underline {
-    border-bottom: solid 0.2em orange;
-}
+    --spacing-2: 5px;
+    --spacing-3: 0.5rem;
+    /* Small */
+    --spacing-4: 0.75rem;
+    --spacing-5: 1rem;
+    /* Standard */
+    --spacing-7: 1.5rem;
+    /* Big */
 
-h3 { 
-    border-bottom-width: 0.1em;
-}
+    --padding-s: var(--spacing-3);
+    --padding-m: var(--spacing-5);
+    --padding-l: var(--spacing-7);
 
-.recipe {
-    display: flex;
-}
+    --margin-s: var(--spacing-3);
+    --margin-m: var(--spacing-5);
+    --margin-l: var(--spacing-7);
 
-.recipe-text {
-    flex: 1;
-}
+    --border-thin: solid 1px var(--c-border);
+    --border-medium: solid 2px var(--c-border);
+    --border-large: solid 3px var(--c-border);
 
-.recipe-image {
-    flex: 1;
-    contain: content;
-}
-
-.recipe-image img {
-    width: 100%;
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-nav {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: start;
-}
-
-footer nav {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.setting {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-self: end;
-}
-
-a {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-    display: grid;
-}
-a:hover {
-    color: purple;
-    text-decoration: underline;
+    /* border-radius */
+    --corner-s: 4px;
+    --corner-m: 10px;
+    --corner-l: 1rem;
 }
