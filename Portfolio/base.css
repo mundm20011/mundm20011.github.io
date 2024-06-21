@@ -1,33 +1,35 @@
 /* color palette */
 :root {
     --white: #ffffff;
+    --white-soft: #efefef;
 
     --black: #181818;
+    --black-soft: #242424;
 
     --theme: #ffa500;
     --theme2: #800080;
 
-    --text-light-1: #2c3e50;
+    --text-light-1: var(--black);
     --text-dark-1: var(--white);
 }
 
 /** SEMANTIC COLORS **/
 :root {
     /* Light Theme (default) */
-    --c-bg: var(--white);
+    --c-bg: var(--white-soft);
 
     --c-heading: var(--text-light-1);
     --c-text: var(--text-light-1);
-    --underlinge: var(--theme)
+    --underline: var(--theme)
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --c-bg: var(--black);
+        --c-bg: var(--black-soft);
         
         --c-heading: var(--text-dark-1);
         --c-text: var(--text-dark-1);
-        --underlinge: var(--theme2)
+        --underline: var(--theme2)
     }
 }
 
