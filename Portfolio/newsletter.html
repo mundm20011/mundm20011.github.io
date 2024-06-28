@@ -10,21 +10,32 @@
 <body>
     <header>
         <nav>
-            <a href="./portfolio.html" class="inactive">Home</a>
-            <a href="./projekte.html" class="inactive">Projekte</a>
+            <span>
+                <a href="./portfolio.html" class="inactive">Home</a>
+                <a href="./projekte.html" class="inactive">Projekte</a>
+            </span>
+            <span>
+                <div class="dropdown">
+                    <img src="./Bilder/user.svg" alt="Cinque Terre" width="100" height="50">
+                    <div class="dropdown-content">
+                    <div>das ist dein name</div>
+                    <div class="desc">ausloggen</div>
+                    </div>
+                </div>
+            </span>
         </nav>
     </header>
     <main>
         <h1>Newsletter</h1>
         <form action="./test.html">
+            <label for="news">neue Projekte</label><br>
+            <input type="checkbox" id="news" name="news" value="news"><br><br>
             <label for="lernjournal">webbased lernjournal with webframework Vue.js, mongoDB</label><br>
             <input type="checkbox" id="lernjournal" name="lernjournal" value="lernjournal"><br>
             <label for="calculator">simple Calculator programmed with Python</label><br>
             <input type="checkbox" id="calculator" name="calculator" value="calculator"><br><br>
             <label for="chess">ascii based chess programmed with Java</label><br>
             <input type="checkbox" id="chess" name="chess" value="chess"><br><br>
-            <label for="lorem2">lorem2</label><br>
-            <input type="checkbox" id="lorem2" name="lorem2" value="lorem2"><br><br>
             <label for="lorem3">lorem3</label><br>
             <input type="checkbox" id="lorem3" name="lorem3" value="lorem3"><br><br>
             <label for="lorem4">lorem4</label><br>
