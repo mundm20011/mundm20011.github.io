@@ -15,6 +15,7 @@ body{
     color: var(--c-text);
     margin: auto;
     padding: var(--padding-l);
+    word-wrap: break-word;
 }
 
 header {
@@ -142,6 +143,9 @@ form {
 }
 form > * {
     padding: var(--padding-s);
+}
+fieldset {
+    display: block;
 }
 
 /* @media (min-width: 600px) {
