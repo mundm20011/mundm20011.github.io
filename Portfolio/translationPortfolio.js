@@ -14,8 +14,12 @@ const translations = {
         gift: "Geschenkekarte",
         journal: "Lernjournal",
         journalDesc: "webbasiertes Lernjournal mit Webframework Vue.js, MongoDB",
+        calcDesc: "einfacher Taschenrechner programmiert mit Python",
         home: "Hauptseite",
-        project: "Projekte"
+        project: "Projekte",
+        contact: "Kontakt",
+        newsletter: "Newsletter",
+        databases: "Datenbanken",
     },
     en: {
         title: "Media Collection Made Easy",
@@ -32,8 +36,12 @@ const translations = {
         gift: "Gift Card",
         journal: "Learning journal",
         journalDesc: "webbased lernjournal with webframework Vue.js, mongoDB",
+        calcDesc: "simple Calculator programmed with Python",
         home: "Home",
-        project: "Project"
+        project: "Project",
+        contact: "Contact",
+        newsletter: "Newsletter",
+        databases: "Databases",
     },
     fr: {
         title: "Collection de Médias Facile",
@@ -50,8 +58,12 @@ const translations = {
         gift: "Carte cadeau",
         journal: "Journal d'apprentissage",
         journalDesc: "journal de bord basé sur le web avec le cadre web Vue.js, MongoDB",
+        calcDesc: "Calculatrice simple programmée avec Python",
         home: "Domicile",
         project: "Projet",
+        contact: "contact",
+        newsletter: "Bulletin d'information",
+        databases: "Bases de données",
     },
     it: {
         title: "Collezione di Media Semplificata",
@@ -68,29 +80,45 @@ const translations = {
         gift: "Carta regalo",
         journal: "Diario di apprendimento",
         journalDesc: "lernjournal basato sul web con il webframework Vue.js, mongoDB",
+        calcDesc: "semplice calcolatrice programmata con Python",
         home: "Casa",
         project: "Progetto",
+        contact: "contatto",
+        newsletter: "Newsletter",
+        databases: "Banche dati",
     }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
     const langSelect = document.getElementById('lang');
     langSelect.addEventListener('change', updateLanguage);
-    updateLanguage(); // Update language on initial load
+    updateLanguage();
 });
 
 function updateLanguage() {
     const lang = document.getElementById('lang').value;
     const translation = translations[lang];
 
-    document.getElementById('lang-label').innerText = translation.lang;
-    document.getElementById('home').innerText = translation.home;
-    document.getElementById('project').innerText = translation.project;
-    document.getElementById('contact').innerText = translation.contact;
-    document.getElementById('newsletter').innerText = translation.newsletter;
-    document.getElementById('journal').innerText = translation.journal;
-    document.getElementById('journalDesc').innerText = translation.journalDesc;
-    document.getElementById('home').innerText = translation.home;
-    document.getElementById('project').innerText = translation.project;
+    const elementsToTranslate = [
+        'lang-label', 'home', 'project', 'contact', 'newsletter', 
+        'journal-label', 'journalDesc', 'title', 'shop', 'library', 
+        'user', 'cart', 'search', 'release', 'img', 'about', 
+        'support', 'gift', 'calcDesc', 'databases'
+    ];
+
+    elementsToTranslate.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.innerText = translation[id];
+        }
+    });
+
+    // document.getElementById('lang-label').innerText = translation.lang;
+    // document.getElementById('home').innerText = translation.home;
+    // document.getElementById('project').innerText = translation.project;
+    // document.getElementById('contact').innerText = translation.contact;
+    // document.getElementById('newsletter').innerText = translation.newsletter;
+    // document.getElementById('journal-label').innerText = translation.journal;
+    // document.getElementById('journalDesc').innerText = translation.journalDesc;
 
 }
