@@ -16,10 +16,13 @@ const translations = {
         journalDesc: "webbasiertes Lernjournal mit Webframework Vue.js, MongoDB",
         calcDesc: "einfacher Taschenrechner programmiert mit Python",
         home: "Hauptseite",
-        project: "Projekte",
+        projectTranslation: "Projekte",
         contact: "Kontakt",
         newsletter: "Newsletter",
         databases: "Datenbanken",
+        counselling: "Beratung",
+        stateProject: "Status des Projektes",
+        logout: "Ausloggen",
     },
     en: {
         title: "Media Collection Made Easy",
@@ -38,10 +41,13 @@ const translations = {
         journalDesc: "webbased lernjournal with webframework Vue.js, mongoDB",
         calcDesc: "simple Calculator programmed with Python",
         home: "Home",
-        project: "Project",
+        projectTranslation: "Project",
         contact: "Contact",
         newsletter: "Newsletter",
         databases: "Databases",
+        counselling: "Counselling",
+        stateProject: "Status of the project",
+        logout: "Logout",
     },
     fr: {
         title: "Collection de Médias Facile",
@@ -60,10 +66,13 @@ const translations = {
         journalDesc: "journal de bord basé sur le web avec le cadre web Vue.js, MongoDB",
         calcDesc: "Calculatrice simple programmée avec Python",
         home: "Domicile",
-        project: "Projet",
+        projectTranslation: "Projet",
         contact: "contact",
         newsletter: "Bulletin d'information",
         databases: "Bases de données",
+        counselling: "Conseils",
+        stateProject: "Statut du projet",
+        logout: "Déconnexion",
     },
     it: {
         title: "Collezione di Media Semplificata",
@@ -82,10 +91,13 @@ const translations = {
         journalDesc: "lernjournal basato sul web con il webframework Vue.js, mongoDB",
         calcDesc: "semplice calcolatrice programmata con Python",
         home: "Casa",
-        project: "Progetto",
+        projectTranslation: "Progetto",
         contact: "contatto",
         newsletter: "Newsletter",
         databases: "Banche dati",
+        counselling: "Consulenza",
+        stateProject: "Stato del progetto",
+        logout: "Logout",
     }
 };
 
@@ -98,27 +110,18 @@ document.addEventListener('DOMContentLoaded', () => {
 function updateLanguage() {
     const lang = document.getElementById('lang').value;
     const translation = translations[lang];
-
+    
     const elementsToTranslate = [
-        'lang-label', 'home', 'project', 'contact', 'newsletter', 
+        'lang-label', 'home', 'projectTranslation', 'contact', 'newsletter', 
         'journal-label', 'journalDesc', 'title', 'shop', 'library', 
         'user', 'cart', 'search', 'release', 'img', 'about', 
-        'support', 'gift', 'calcDesc', 'databases'
+        'support', 'gift', 'calcDesc', 'databases', 'counselling', 'stateProject'
     ];
-
-    elementsToTranslate.forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.innerText = translation[id];
-        }
+    
+    elementsToTranslate.forEach(className => {
+        const elements = document.getElementsByClassName(className);
+        Array.from(elements).forEach(element => {
+            element.innerText = translation[className];
+        });
     });
-
-    // document.getElementById('lang-label').innerText = translation.lang;
-    // document.getElementById('home').innerText = translation.home;
-    // document.getElementById('project').innerText = translation.project;
-    // document.getElementById('contact').innerText = translation.contact;
-    // document.getElementById('newsletter').innerText = translation.newsletter;
-    // document.getElementById('journal-label').innerText = translation.journal;
-    // document.getElementById('journalDesc').innerText = translation.journalDesc;
-
 }

@@ -12,12 +12,12 @@
     <header>
         <nav>
             <span>
-                <a href="./portfolio.html" class="active" id="home">Home</a>
-                <a href="./projekte.html" class="inactive" id="project">Projekte</a>
+                <a href="./portfolio.html" style="color: var(--underline);" class="home">Home</a>
+                <a href="./projekte.html"  class="projectTranslation">Projekte</a>
             </span>
             <span>
                 <div>
-                    <label for="lang" id="lang-label">Sprache:</label>
+                    <label for="lang" class="lang-label">Sprache:</label>
                     <select name="lang" id="lang">
                       <option value="de">Deutsch</option>
                       <option value="en">Englisch</option>
@@ -26,19 +26,19 @@
                     </select> 
                 </div>
                 <div class="dropdown">
-                    <img src="./Bilder/user.svg" alt="Cinque Terre" width="100" height="50">
+                    <img src="./Bilder/user.svg" alt="User Img" width="100" height="50">
                     <div class="dropdown-content">
                     <div>das ist dein name</div>
-                    <div class="desc">ausloggen</div>
+                    <div class="logout">ausloggen</div>
                     </div>
                 </div>
             </span>
         </nav>
     </header>
     <main>
-        <h1 id="home">Home</h1>
-        <div id="journalDesc">webbased lernjournal with webframework Vue.js, mongoDB</div>
-        <div id="calcDesc">simple Calculator programmed with Python</div>
+        <h1 class="home">Home</h1>
+        <div class="journalDesc">webbased lernjournal with webframework Vue.js, mongoDB</div>
+        <div class="calcDesc">simple Calculator programmed with Python</div>
         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque in sed eius est. Culpa ab eveniet optio? Facilis expedita cum mollitia, quae minus velit deserunt quia excepturi nam maiores.</div>
         <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque in sed eius est. Culpa ab eveniet optio? Facilis expedita cum mollitia, quae minus velit deserunt quia excepturi nam maiores.</div>
         <h2>Kategorien</h2>
@@ -46,13 +46,13 @@
             <li>Frontend</li>
             <li>Backend</li>
             <li>Python</li>
-            <li id="databases">Datenbanken</li>
+            <li class="databases">Datenbanken</li>
         </ul>
-        <a href="./newsletter.html" class="inactive" id="newsletter">Newsletter</a>
+        <a href="./newsletter.html"  class="newsletter">Newsletter</a>
     </main>
     <footer>
         <nav>
-            <a href="./kontakte.html" class="inactive" id="contact">Kontakte</a>
+            <a href="./kontakte.html"  class="contact">Kontakte</a>
         </nav>
     </footer>
 </body>
