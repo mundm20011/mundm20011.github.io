@@ -5,16 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./base.css">
-    <title>Projekte</title>
+    <!-- <script src="./translationPortfolio.js" defer></script> -->
+    <title id="project">Projekte</title>
 </head>
 <body>
     <header>
         <nav>
             <span>
-                <a href="./portfolio.html" class="inactive">Home</a>
-                <a href="./projekte.html" class="active">Projekte</a>
+                <a href="./portfolio.html" class="inactive" id="home">Home</a>
+                <a href="./projekte.html" class="active" id="project">Projekte</a>
             </span>
             <span>
+                <div>
+                    <label for="lang" id="lang-label">Sprache:</label>
+                    <select name="lang" id="lang">
+                      <option value="de">Deutsch</option>
+                      <option value="en">Englisch</option>
+                      <option value="fr">Französisch</option>
+                      <option value="it">Italienisch</option>
+                    </select> 
+                </div>
                 <div class="dropdown">
                     <img src="./Bilder/user.svg" alt="Cinque Terre" width="100" height="50">
                     <div class="dropdown-content">
@@ -26,7 +36,7 @@
         </nav>
     </header>
     <main>
-        <h1>Projekte</h1>
+        <h1 id="project">Projekte</h1>
         <input type="text" placeholder="Search...">
         <div>
             <label for="lang" id="lang-label">Kategorien:</label>
@@ -39,7 +49,7 @@
             </select> 
         </div>
         <div class="project">
-            <a href="./Projekte/lernjournal.html">webbased lernjournal with webframework Vue.js, mongoDB</a>
+            <a href="./Projekte/lernjournal.html" id="journalDesc">webbased lernjournal with webframework Vue.js, mongoDB</a>
             <a href="./Projekte/taschenrechner.html">simple Calculator programmed with Python</a>
             <a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque in sed eius est. Culpa ab eveniet optio? Facilis expedita cum mollitia, quae minus velit deserunt quia excepturi nam maiores.</a>
             <a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt atque in sed eius est. Culpa ab eveniet optio? Facilis expedita cum mollitia, quae minus velit deserunt quia excepturi nam maiores.</a>

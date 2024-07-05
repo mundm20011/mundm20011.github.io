@@ -148,9 +148,12 @@ fieldset {
     display: block;
 }
 
-/* @media (min-width: 600px) {
-    h1 { font-size: 3rem; }
+/* .inactive {
+    
 } */
+.active {
+    color: var(--underline);
+}
 
 @media (min-width: 900px) {
     .project {
@@ -177,11 +180,3 @@ fieldset {
         grid-template-columns: auto auto auto auto auto auto;
     }
 }
-
-/* @media (min-width: 1500px) {
-    h1 { font-size: 6rem; }
-} */
-
-/* @media (min-width: 1800px) {
-    h1 { font-size: 7rem; }
-} */
