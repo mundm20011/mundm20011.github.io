@@ -71,7 +71,7 @@ function updateLanguage() {
     document.getElementById('shop').innerText = translation.shop;
     document.getElementById('library').innerText = translation.library;
     document.getElementById('user').innerText = translation.user;
-    document.getElementById('lang-label').innerText = translation.lang;
+    document.getElementById('Translation').innerText = translation.lang;
     document.getElementById('cart').innerText = translation.cart;
     document.getElementById('search').placeholder = translation.search;
 

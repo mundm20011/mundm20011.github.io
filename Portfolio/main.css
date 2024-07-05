@@ -155,6 +155,11 @@ fieldset {
     color: var(--underline);
 }
 
+.categorie {
+    display: flex;
+    align-items: baseline;
+}
+
 @media (min-width: 900px) {
     .project {
         display: grid;

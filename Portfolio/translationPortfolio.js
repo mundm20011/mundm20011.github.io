@@ -4,7 +4,7 @@ const translations = {
         shop: "Shop",
         library: "Bibliothek",
         user: "Benutzer",
-        lang: "Sprache",
+        langTranslation: "Sprache",
         cart: "Warenkorb",
         search: "Suche",
         release: "Erscheinungsjahr",
@@ -23,13 +23,14 @@ const translations = {
         counselling: "Beratung",
         stateProject: "Status des Projektes",
         logout: "Ausloggen",
+        cat: "Kategorien",
     },
     en: {
         title: "Media Collection Made Easy",
         shop: "Shop",
         library: "Library",
         user: "User",
-        lang: "Language",
+        langTranslation: "Language",
         cart: "Cart",
         search: "Search",
         release: "Release Year",
@@ -48,13 +49,14 @@ const translations = {
         counselling: "Counselling",
         stateProject: "Status of the project",
         logout: "Logout",
+        cat: "Categories",
     },
     fr: {
         title: "Collection de Médias Facile",
         shop: "Boutique",
         library: "Bibliothèque",
         user: "Utilisateur",
-        lang: "Langue",
+        langTranslation: "Langue",
         cart: "Panier",
         search: "Recherche",
         release: "Année de sortie",
@@ -73,13 +75,14 @@ const translations = {
         counselling: "Conseils",
         stateProject: "Statut du projet",
         logout: "Déconnexion",
+        cat: "Catégories",
     },
     it: {
         title: "Collezione di Media Semplificata",
         shop: "Negozio",
         library: "Biblioteca",
         user: "Utente",
-        lang: "Lingua",
+        langTranslation: "Lingua",
         cart: "Carrello",
         search: "Cerca",
         release: "Anno di uscita",
@@ -98,6 +101,7 @@ const translations = {
         counselling: "Consulenza",
         stateProject: "Stato del progetto",
         logout: "Logout",
+        cat: "Categorie",
     }
 };
 
@@ -112,10 +116,11 @@ function updateLanguage() {
     const translation = translations[lang];
     
     const elementsToTranslate = [
-        'lang-label', 'home', 'projectTranslation', 'contact', 'newsletter', 
+        'langTranslation', 'home', 'projectTranslation', 'contact', 'newsletter', 
         'journal-label', 'journalDesc', 'title', 'shop', 'library', 
         'user', 'cart', 'search', 'release', 'img', 'about', 
-        'support', 'gift', 'calcDesc', 'databases', 'counselling', 'stateProject'
+        'support', 'gift', 'calcDesc', 'databases', 'counselling', 'stateProject',
+        'cat'
     ];
     
     elementsToTranslate.forEach(className => {
