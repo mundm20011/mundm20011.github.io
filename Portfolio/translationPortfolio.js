@@ -14,6 +14,7 @@ const translations = {
         gift: "Geschenkekarte",
         journal: "Lernjournal",
         journalDesc: "webbasiertes Lernjournal mit Webframework Vue.js, MongoDB",
+        journalDetailDesc: "Moderne Web-Applikation für das obligatorische Lernjournal. Ermöglicht Auszubildenden, ihre Fortschritte in Form von Artikeln zu dokumentieren.",
         calcDesc: "einfacher Taschenrechner programmiert mit Python",
         home: "Hauptseite",
         projectTranslation: "Projekte",
@@ -40,6 +41,7 @@ const translations = {
         gift: "Gift Card",
         journal: "Learning journal",
         journalDesc: "webbased lernjournal with webframework Vue.js, mongoDB",
+        journalDetailDesc: "Modern Web-Application for the mandatory Lernjournal. Allows apprentices to document their progress in article form.",
         calcDesc: "simple Calculator programmed with Python",
         home: "Home",
         projectTranslation: "Project",
@@ -66,6 +68,7 @@ const translations = {
         gift: "Carte cadeau",
         journal: "Journal d'apprentissage",
         journalDesc: "journal de bord basé sur le web avec le cadre web Vue.js, MongoDB",
+        journalDetailDesc: "Application Web moderne pour le Lernjournal obligatoire. Elle permet aux apprentis de documenter leurs progrès sous forme d'articles.",
         calcDesc: "Calculatrice simple programmée avec Python",
         home: "Domicile",
         projectTranslation: "Projet",
@@ -92,6 +95,7 @@ const translations = {
         gift: "Carta regalo",
         journal: "Diario di apprendimento",
         journalDesc: "lernjournal basato sul web con il webframework Vue.js, mongoDB",
+        journalDetailDesc: "Moderna applicazione web per il Lernjournal obbligatorio. Permette agli apprendisti di documentare i loro progressi sotto forma di articoli.",
         calcDesc: "semplice calcolatrice programmata con Python",
         home: "Casa",
         projectTranslation: "Progetto",
@@ -120,7 +124,7 @@ function updateLanguage() {
         'journal-label', 'journalDesc', 'title', 'shop', 'library', 
         'user', 'cart', 'search', 'release', 'img', 'about', 
         'support', 'gift', 'calcDesc', 'databases', 'counselling', 'stateProject',
-        'cat'
+        'cat', 'journalDetailDesc'
     ];
     
     elementsToTranslate.forEach(className => {

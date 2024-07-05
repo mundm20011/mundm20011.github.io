@@ -1,57 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../base.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../base.css" />
     <script src="../translationPortfolio.js" defer></script>
     <title class="journal-label">Lernjournal</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <span>
-                <a href="../portfolio.html"  class="home">Home</a>
-                <a href="../projekte.html" style="color: var(--underline);" class="projectTranslation">Projekte</a>
-            </span>
-            <span>
-                <div>
-                    <label for="lang" class="Translation">Sprache:</label>
-                    <select name="lang" id="lang">
-                      <option value="de">Deutsch</option>
-                      <option value="en">Englisch</option>
-                      <option value="fr">Französisch</option>
-                      <option value="it">Italienisch</option>
-                    </select> 
-                </div>
-                <div class="dropdown">
-                    <img src="../Bilder/user.svg" alt="User Img" width="100" height="50">
-                    <div class="dropdown-content">
-                    <div>das ist dein name</div>
-                    <div class="logout">ausloggen</div>
-                    </div>
-                </div>
-            </span>
-        </nav>
+      <nav>
+        <span>
+          <a href="../portfolio.html" class="home">Home</a>
+          <a
+            href="../projekte.html"
+            style="color: var(--underline)"
+            class="projectTranslation"
+            >Projekte</a
+          >
+        </span>
+        <span>
+          <div>
+            <label for="lang" class="Translation">Sprache:</label>
+            <select name="lang" id="lang">
+              <option value="de">Deutsch</option>
+              <option value="en">Englisch</option>
+              <option value="fr">Französisch</option>
+              <option value="it">Italienisch</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <img
+              src="../Bilder/user.svg"
+              alt="User Img"
+              width="100"
+              height="50"
+            />
+            <div class="dropdown-content">
+              <div>das ist dein name</div>
+              <div class="logout">ausloggen</div>
+            </div>
+          </div>
+        </span>
+      </nav>
     </header>
     <main>
-        <div class="categorie">
-            <h1 class="cat">kat</h1>
-            <h1>:</h1>
-            <h2>Frontent</h2>
-            <h2>Backend</h2>
-            <h2 class="databases">Datenbanken</h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, incidunt rem! Temporibus ut architecto rerum id? Sunt odio suscipit quod est eaque architecto mollitia, error cum necessitatibus consequatur. Provident, reiciendis?</p>
-        <label for="file" class="stateProject">Status des Projektes</label>
-        <meter id="file" value="50"  min="0" max="100" low="15" high="80">50%</meter>
-        <button class="counselling">Beratung</button>
+      <div class="categorie">
+        <h1 class="cat">kat</h1>
+        <h1>:</h1>
+        <ul>
+          <li>Frontent</li>
+          <li>Backend</li>
+          <li class="databases">Datenbanken</li>
+        </ul>
+      </div>
+      <p class="journalDetailDesc">
+        Moderne Web-Applikation für das obligatorische Lernjournal. Ermöglicht
+        Auszubildenden, ihre Fortschritte in Form von Artikeln zu dokumentieren.
+      </p>
+      <h2>Goal</h2>
+      <p>
+        The goal of the project, is to develop and provide a modern
+        Web-Application for the Lerndokumentation. It should allow all
+        apprentices to document their work, progress, experiences and guides.
+        This is mandatory in accordance with
+        <a href="https://www.fedlex.admin.ch/eli/oc/2020/941/de"
+          style="display: contents;color: purple;text-decoration: underline;">Art. 12 Abs. 1 Bildungsverordnung (BiVo)</a
+        >. Furthermore it is recommended to let apprentices fill out a daily
+        journal in which they document and reflect on the work they've done on a
+        daily basis. For the project this means that it has to support two kinds
+        of entries. Articles and Journals whereas Articles can be made public,
+        so that other apprentices can read and learn.
+      </p>
+      <h2>Procedure</h2>
+      <p>
+        As a first step, a MVP (Minimum Viable Product) should be developed and
+        deployed, so that the product is used from early on, which can then be
+        refined and improved in increments using an agile approach.
+      </p>
+      <label for="file" class="stateProject">Status des Projektes</label>
+      <meter id="file" value="50" min="0" max="100" low="15" high="80">
+        50%
+      </meter>
+      <button class="counselling">Beratung</button>
     </main>
     <footer>
-        <nav>
-            <a href="../kontakte.html"  class="contact">Kontakte</a>
-        </nav>
+      <nav>
+        <a href="../kontakte.html" class="contact">Kontakte</a>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
+
+<style scoped>
+  ul {
+    display: flex;
+  }
+</style>

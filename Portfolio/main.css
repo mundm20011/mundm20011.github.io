@@ -26,6 +26,10 @@ main {
     border-bottom: solid var(--size-s) var(--underline);
 }
 
+h2 {
+    padding: var(--padding-s);
+}
+
 td{
     padding: var(--padding-s);
 }
