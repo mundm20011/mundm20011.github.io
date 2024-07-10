@@ -1,65 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../base.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="../base.css" />
     <script src="../translationPortfolio.js" defer></script>
     <title>Taschenrechner</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <span>
-                <a href="../portfolio.html"  class="home">Home</a>
-                <a href="../projekte.html" style="color: var(--underline);" class="projectTranslation">Projekte</a>
-            </span>
-            <span>
-                <div>
-                    <label for="lang" class="Translation">Sprache:</label>
-                    <select name="lang" id="lang">
-                      <option value="de">Deutsch</option>
-                      <option value="en">Englisch</option>
-                      <option value="fr">Französisch</option>
-                      <option value="it">Italienisch</option>
-                    </select> 
-                </div>
-                <div class="dropdown">
-                    <img src="../Bilder/user.svg" alt="User Img" width="100" height="50">
-                    <div class="dropdown-content">
-                    <div>das ist dein name</div>
-                    <div class="logout">ausloggen</div>
-                    </div>
-                </div>
-            </span>
-        </nav>
+      <nav>
+        <span>
+          <a href="../portfolio.html" class="home">Home</a>
+          <a
+            href="../projekte.html"
+            style="color: var(--underline)"
+            class="projectTranslation"
+            >Projekte</a
+          >
+        </span>
+        <span>
+          <div>
+            <label for="lang" class="Translation">Sprache:</label>
+            <select name="lang" id="lang">
+              <option value="de">Deutsch</option>
+              <option value="en">Englisch</option>
+              <option value="fr">Französisch</option>
+              <option value="it">Italienisch</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <img
+              src="../Bilder/user.svg"
+              alt="User Img"
+              width="100"
+              height="50"
+            />
+            <div class="dropdown-content">
+              <div>das ist dein name</div>
+              <div class="logout">ausloggen</div>
+            </div>
+          </div>
+        </span>
+      </nav>
     </header>
     <main>
-        <div class="categorie">
-            <h1 class="cat">kat</h1>
-            <h1>:</h1>
-            <ul>
-                <li>Python</li>
-                <li>Tkinter</li>
-            </ul>
+      <div class="categorie">
+        <h1 class="cat">kat</h1>
+        <h1>:</h1>
+        <ul>
+          <li>Python</li>
+          <li>Tkinter</li>
+        </ul>
+      </div>
+      <section>
+        <div>
+          <h2>Python Taschenrechner</h2>
+          <h3>
+            Programmieren Sie einen einfachen Taschenrechner mit
+            Python-Funktionen!
+          </h3>
+          <p>
+            Dieses Projekt ist eine einfache Anwendung zum Programmieren eines
+            Taschenrechners mit Python-Funktionen. Der Taschenrechner soll in
+            der Lage sein einfache Additions-, Subtraktions-, Multiplikations-
+            und Division-Operationen durchzuführen und die Ergebnisse im
+            Terminal anzuzeigen.
+          </p>
+          <h4>Funktionen</h4>
+          <p>
+            Der Taschenrechner soll folgende Funktionen enthalten:<br /><br />
+            - `add()` : Diese Funktion soll zwei Zahlen addieren und das
+            Ergebnis im Terminal anzeigen.<br />
+            - `subtract()` : Diese Funktion soll zwei Zahlen subtrahieren und
+            das Ergebnis im Terminal anzeigen.<br />
+            - `multiply()` : Diese Funktion soll zwei Zahlen multiplizieren und
+            das Ergebnis im Terminal anzeigen.<br />
+            - `divide()` : Diese Funktion soll zwei Zahlen dividieren und das
+            Ergebnis im Terminal anzeigen.
+          </p>
+          <h4>Anforderungen</h4>
+          <p>
+            - Programmieren Sie den Taschenrechner mit Python-Funktionen.<br />
+            - Die Ergebnisse sollen im Terminal angezeigt werden.<br />
+            - Die Funktionen `add()`, `subtract()`, `multiply()` und `divide()`
+            sollen mittels Funktionen programmiert werden.
+          </p>
+          <h4>Bonusaufgabe</h4>
+          <p>
+            - Fügen Sie eine Funktion hinzu, mit der man Quadratwurzeln
+            berechnen kann. <br />
+            - Fügen Sie eine Funktion hinzu, mit der man Palindrome (Wörter oder
+            Sätze, die vorwärts und rückwärts gelesen das gleiche sind)
+            überprüfen kann. (Beispiel: "Anna" ist ein Palindrom, da es vorwärts
+            und rückwärts gelesen das gleiche ist.) <br />
+            - Fügen Sie eine Funktion hinzu, mit der man Primzahlen überprüfen
+            kann.
+            <br />
+            - Fügen Sie eine Funktion hinzu, mit der man die Fakultät einer Zahl
+            berechnen kann. <br />
+            - Fügen Sie eine Funktion hinzu, mit der man die Summe einer
+            Zahlenfolge berechnen kann. <br />
+            - Fügen Sie eine Funktion hinzu, mit der man binäre Zahlen in
+            Dezimalzahlen umwandeln kann.
+          </p>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, incidunt rem! Temporibus ut architecto rerum id? Sunt odio suscipit quod est eaque architecto mollitia, error cum necessitatibus consequatur. Provident, reiciendis?</p>
-        <img src="../Bilder/taschenrechner.png" alt="ein Bild des Taschenrechners">
-        <label for="file" class="stateProject">Status des Projektes</label>
-        <meter id="file" value="100"  min="0" max="100" low="15" high="80">100%</meter>
-        <button class="counselling">Beratung</button>
+        <div>
+          <h4>Endprodukt</h4>
+          <img
+            src="../Bilder/taschenrechner.png"
+            alt="ein Bild des Taschenrechners" style="max-height: none;"
+          />
+        </div>
+      </section>
+      <label for="file" class="stateProject">Status des Projektes</label>
+      <meter id="file" value="100" min="0" max="100" low="15" high="80">
+        100%
+      </meter>
+      <button class="counselling">Beratung</button>
     </main>
     <footer>
-        <nav>
-            <a href="../kontakte.html"  class="contact">Kontakte</a>
-        </nav>
+      <nav>
+        <a href="../kontakte.html" class="contact">Kontakte</a>
+      </nav>
     </footer>
-</body>
+  </body>
 </html>
 
 <style scoped>
-    ul {
-        display: flex;
-    }
+  ul {
+    display: flex;
+  }
+  @media (min-width: 1200px) {
+  section {
+    display: flex;
+  } 
+}
 </style>
