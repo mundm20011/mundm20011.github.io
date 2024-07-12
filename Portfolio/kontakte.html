@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./base.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./base.css" />
     <script src="./translationPortfolio.js" defer></script>
     <title class="contact">Kontakt</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <span>
-                <a href="./portfolio.html"  class="home">Home</a>
-                <a href="./projekte.html"  class="projectTranslation">Projekte</a>
-            </span>
-            <span>
-                <div>
-                    <label for="lang" class="langTranslation">Sprache:</label>
-                    <select name="lang" id="lang">
-                      <option value="de">Deutsch</option>
-                      <option value="en">Englisch</option>
-                      <option value="fr">Französisch</option>
-                      <option value="it">Italienisch</option>
-                    </select> 
-                </div>
-                <div class="dropdown">
-                    <img src="./Bilder/user.svg" alt="User Img" width="100" height="50">
-                    <div class="dropdown-content">
-                    <div>das ist dein name</div>
-                    <div class="logout">ausloggen</div>
-                    </div>
-                </div>
-            </span>
-        </nav>
+      <nav>
+        <span>
+          <a href="./portfolio.html" class="home">Home</a>
+          <a href="./projekte.html" class="projectTranslation">Projekte</a>
+        </span>
+        <span>
+          <div>
+            <label for="lang" class="langTranslation">Sprache:</label>
+            <select name="lang" id="lang">
+              <option value="de">Deutsch</option>
+              <option value="en">Englisch</option>
+              <option value="fr">Französisch</option>
+              <option value="it">Italienisch</option>
+            </select>
+          </div>
+          <div class="dropdown">
+            <img
+              src="./Bilder/user.svg"
+              alt="User Img"
+              width="100"
+              height="50"
+            />
+            <div class="dropdown-content">
+              <div>das ist dein name</div>
+              <div class="logout">ausloggen</div>
+            </div>
+          </div>
+        </span>
+      </nav>
     </header>
     <main>
-        <h1 class="contact">Kontakt</h1>
-        <form action="./test.html">
-            <div>
-                <label for="kat">Anliegen</label>
-                <select name="kat" id="kat">
-                  <option>Allgemein</option>
-                  <option class="journal-label">Lernjournal</option>
-                  <option>Taschenrechner</option>
-                  <option>lorem</option>
-                  <option>lorem</option>
-                  <option>lorem</option>
-                  <option>lorem</option>
-                  <option>lorem</option>
-                </select> 
-            </div>
-            <fieldset>
-                <label for="vorname">Vorname*</label>
-                <input type="text" id="vorname" name="vorname" value="John">
-            </fieldset>
-            <fieldset>
-                <label for="nachname">Nachname*</label>
-                <input type="text" id="nachname" name="nachname" value="Doe">
-            </fieldset>
-            <fieldset>
-                <label for="strasse">Strasse</label>
-                <input type="text" id="strasse" name="strasse" value="Doe">
-            </fieldset>
-            <fieldset>
-                <label for="plz">PLZ</label>
-                <input type="text" id="plz" name="plz" value="Doe">
-            </fieldset>
-            <fieldset>
-                <label for="ort">Ort</label>
-                <input type="text" id="ort" name="ort" value="Doe">
-            </fieldset>
-            <fieldset>
-                <label for="firma">Firma</label>
-                <input type="text" id="firma" name="firma" value="Doe">
-            </fieldset>
-            <fieldset>
-                <label for="telefon">Telefon*</label>
-                <input type="text" id="telefon" name="telefon" value="Doe">
-            </fieldset>
-            <fieldset>
-                <label for="email">E-mail*</label>
-                <input type="text" id="email" name="email" value="Doe">
-            </fieldset>
-            <input type="submit" value="Submit">
-          </form> 
+      <h1 class="contact">Kontakt</h1>
+      <form action="./test.html">
+        <div>
+          <label for="kat">Anliegen</label>
+          <select name="kat" id="kat">
+            <option>Allgemein</option>
+            <option class="journal-label">Lernjournal</option>
+            <option>Taschenrechner</option>
+            <option>lorem</option>
+            <option>lorem</option>
+            <option>lorem</option>
+            <option>lorem</option>
+            <option>lorem</option>
+          </select>
+        </div>
+        <div class="form">
+          <fieldset>
+            <label for="vorname">Vorname*</label>
+            <input type="text" id="vorname" name="vorname" value="John" />
+          </fieldset>
+          <fieldset>
+            <label for="nachname">Nachname*</label>
+            <input type="text" id="nachname" name="nachname" value="Doe" />
+          </fieldset>
+          <fieldset>
+            <label for="strasse">Strasse</label>
+            <input type="text" id="strasse" name="strasse" value="Doe" />
+          </fieldset>
+          <fieldset>
+            <label for="plz">PLZ</label>
+            <input type="text" id="plz" name="plz" value="Doe" />
+          </fieldset>
+          <fieldset>
+            <label for="ort">Ort</label>
+            <input type="text" id="ort" name="ort" value="Doe" />
+          </fieldset>
+          <fieldset>
+            <label for="firma">Firma</label>
+            <input type="text" id="firma" name="firma" value="Doe" />
+          </fieldset>
+          <fieldset>
+            <label for="telefon">Telefon*</label>
+            <input type="text" id="telefon" name="telefon" value="Doe" />
+          </fieldset>
+          <fieldset>
+            <label for="email">E-mail*</label>
+            <input type="text" id="email" name="email" value="Doe" />
+          </fieldset>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
     </main>
     <footer>
-        <nav>
-            <a href="./kontakte.html" style="color: var(--underline);" class="contact">Kontakte</a>
-        </nav>
+      <nav>
+        <a
+          href="./kontakte.html"
+          style="color: var(--underline)"
+          class="contact"
+          >Kontakte</a
+        >
+      </nav>
     </footer>
-</body>
+  </body>
 </html>

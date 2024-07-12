@@ -139,7 +139,7 @@ a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-form {
+.form {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: start;
@@ -164,6 +164,10 @@ fieldset {
     align-items: baseline;
 }
 
+input {
+    margin: var(--margin-l);
+}
+
 @media (min-width: 900px) {
     .project {
         display: grid;
@@ -172,7 +176,7 @@ fieldset {
     ul {
         grid-template-columns: auto auto;
     }
-    form {
+    .form {
         grid-template-columns: auto auto auto auto;
     }
 }
@@ -185,7 +189,7 @@ fieldset {
     ul {
         grid-template-columns: auto auto auto;
     }
-    form {
+    .form {
         grid-template-columns: auto auto auto auto auto auto;
     }
 }
