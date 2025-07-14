@@ -1,0 +1,79 @@
+:root {
+    --white: #ffffff;
+    --white-soft: #dddddd;
+    --black: #181818;
+    --black-soft: #242424;
+    --theme: #ffa500;
+    --theme2: #800080;
+    --c-bg: var(--white-soft);
+    --c-text: var(--black);
+    --underline: var(--theme);
+    --size-s: 0.5rem;
+    --size-m: 1rem;
+    --size-l: 1.5rem;
+    --padding-s: 0.5rem;
+    --padding-l: 1.5rem;
+}
+
+body {
+    font-family: Helvetica, sans-serif, fantasy;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 16px;
+    background-color: var(--c-bg);
+    color: var(--c-text);
+    margin: auto;
+    padding: var(--padding-l);
+}
+
+header, main {
+    border-bottom: solid var(--size-s) var(--underline);
+}
+
+h1, h2, h3 {
+    color: var(--c-text);
+}
+
+a {
+    color: var(--c-text);
+    text-decoration: none;
+    padding: var(--padding-s);
+}
+a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.section-card {
+    background-color: var(--white);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.section-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.tab-active {
+    border-color: var(--underline);
+    color: var(--underline);
+    font-weight: 600;
+}
+.tab-inactive {
+    border-color: transparent;
+    color: #475569;
+}
+
+footer nav {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: var(--padding-l);
+}
+
+@media (min-width: 900px) {
+    .project {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
