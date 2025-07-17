@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 category: 'Welt & Erkundung',
                 icon: '🗺️',
                 bb: 'Prozedural generierte Weltkarte, die bei jedem Start neu ist. Die Welt ist eine dynamische Simulation, in der Fraktionen agieren und auf den Spieler reagieren. Ein Gefühl, Teil einer lebendigen Welt zu sein.',
-                wt: 'Große, handgefertigte offene Welt, die in Regionen unterteilt ist. Jede Region hat ihr eigenes Szenario. Der Fokus liegt auf dem Entdecken von Orten und dem Abschließen regionaler Quests.'
+                wt: 'Grosse, handgefertigte offene Welt, die in Regionen unterteilt ist. Jede Region hat ihr eigenes Szenario. Der Fokus liegt auf dem Entdecken von Orten und dem Abschliessen regionaler Quests.'
             },
             {
                 category: 'Charakterentwicklung',
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             {
                 title: 'DLCs & Community: Ein Spiel, das lebt',
-                content: 'Battle Brothers wird durch zahlreiche DLCs (z.B. Blazing Deserts, Warriors of the North) erweitert, die neue Regionen, Gegner, Ursprünge und Mechaniken hinzufügen. Noch wichtiger ist die riesige Modding-Community. Mods wie "Legends" überarbeiten das Spiel fundamental und sorgen für hunderte Stunden zusätzlichen Spielspaß. Dieses Ökosystem aus offizieller Unterstützung und Community-Inhalten macht das Spiel auch Jahre nach seiner Veröffentlichung extrem langlebig.'
+                content: 'Battle Brothers wird durch zahlreiche DLCs (z.B. Blazing Deserts, Warriors of the North) erweitert, die neue Regionen, Gegner, Ursprünge und Mechaniken hinzufügen. Noch wichtiger ist die riesige Modding-Community. Mods wie "Legends" überarbeiten das Spiel fundamental und sorgen für hunderte Stunden zusätzlichen Spielspass. Dieses Ökosystem aus offizieller Unterstützung und Community-Inhalten macht das Spiel auch Jahre nach seiner Veröffentlichung extrem langlebig.'
             }
         ],
         wt_deep_dive: [
@@ -88,12 +88,12 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 question: "Wie gehst du mit Niederlagen um?",
                 answers: [
-                    { text: "Scheitern ist Teil des Lernprozesses. Ich beiße mich durch, auch wenn es weh tut und ich von vorne anfangen muss.", game: "bb" },
+                    { text: "Scheitern ist Teil des Lernprozesses. Ich beisse mich durch, auch wenn es weh tut und ich von vorne anfangen muss.", game: "bb" },
                     { text: "Ich möchte aus Fehlern lernen, aber nicht meine gesamte Truppe wegen eines einzigen Patzers verlieren.", game: "wt" }
                 ]
             },
             {
-                question: "Was ist dir außerhalb des Kampfes wichtig?",
+                question: "Was ist dir ausserhalb des Kampfes wichtig?",
                 answers: [
                     { text: "Eine dynamische, lebende Welt, die auf meine Taten reagiert und sich ständig verändert.", game: "bb" },
                     { text: "Eine riesige Welt frei zu erkunden, Geheimnisse zu entdecken und meine Gruppe durch Handwerk zu verbessern.", game: "wt" }
@@ -277,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 resultDesc.textContent = "Du bist ein Entdecker und ein Stratege, der Freiheit und Planung schätzt. Die riesige Sandbox von Wartales, die du mit Freunden erkunden und durch dein handwerkliches Geschick meistern kannst, ist dein ideales Schlachtfeld. Sammle deine Gefährten und beginne dein Abenteuer!";
             } else {
                 resultTitle.textContent = "Ein geborener Söldner für jede Schlacht!";
-                resultDesc.textContent = "Du bist vielseitig und siehst in beiden Philosophien einen Reiz. Du könntest sowohl die gnadenlose Herausforderung von Battle Brothers als auch die strategische Freiheit von Wartales genießen. Wirf eine Münze – oder probiere einfach beide aus!";
+                resultDesc.textContent = "Du bist vielseitig und siehst in beiden Philosophien einen Reiz. Du könntest sowohl die gnadenlose Herausforderung von Battle Brothers als auch die strategische Freiheit von Wartales geniessen. Wirf eine Münze – oder probiere einfach beide aus!";
             }
 
             resultDiv.classList.remove('hidden');
