@@ -76,3 +76,25 @@ footer nav {
         grid-template-columns: auto auto;
     }
 }
+
+.subaccordion-content.hidden {
+    display: none;
+}
+.subaccordion-content {
+    transition: all 0.2s;
+}
+
+/* Skilltree-Tabellen */
+#skilltree-section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#skilltree-section th, #skilltree-section td {
+  border: 1px solid #cbd5e1;
+  padding: 0.5rem;
+  text-align: left;
+}
+#skilltree-section th {
+  background: #f1f5f9;
+}

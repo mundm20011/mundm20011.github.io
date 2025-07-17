@@ -9,7 +9,6 @@ html {
 body{
     font-family: Helvetica, sans-serif, fantasy;
     font-weight: bold;
-    font-style: italic;
     font-size: 16px; /* 16px */
     background-color: var(--c-bg);
     color: var(--c-text);

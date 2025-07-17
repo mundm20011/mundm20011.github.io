@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wartales: Ein Anfängerleitfaden</title>
+    <link rel="stylesheet" href="wartales.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="text-slate-800">
+    <header>
+      <nav>
+        <!-- <a href="../Portfolio/portfolio.html">Portfolio</a>
+            <a href="../Mediensammlung/M293-LA02-Einfache-Webseite-fuer-Mediensammlung.html">Mediensammlung</a> -->
+        <a href="../BBvsWT/bbvswt.html">Battle Brothers vs Wartales</a>
+        <a href="#" style="color: var(--underline)">Wartales Guide</a>
+      </nav>
+    </header>
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl">
+      <header class="text-center mb-8 md:mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold text-slate-900 mb-2">
+          Wartales: Ein Anfängerleitfaden
+        </h1>
+        <p class="text-lg text-slate-600">
+          Entdecke die Welt von Wartales und lerne, wie du als Söldner
+          überlebst.
+        </p>
+      </header>
+
+      <nav class="mb-8 border-b border-slate-200">
+        <ul
+          class="flex flex-wrap -mb-px justify-center text-sm font-medium text-center"
+        >
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 rounded-t-lg tab-active"
+              data-tab="overview"
+              >Übersicht</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 rounded-t-lg tab-inactive"
+              data-tab="gameplay"
+              >Spielmechanik</a
+            >
+          </li>
+          <li class="mr-2">
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 rounded-t-lg tab-inactive"
+              data-tab="character"
+              >Charakterentwicklung</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="inline-block p-4 border-b-2 rounded-t-lg tab-inactive"
+              data-tab="tips"
+              >Tipps für neue Spieler</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <main>
+        <!-- Overview Section -->
+        <section id="overview" class="tab-content space-y-8">
+          <div class="p-6 md:p-8 section-card">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">
+              Willkommen in Wartales!
+            </h2>
+            <p class="text-slate-700 leading-relaxed">
+              Wartales ist ein fesselndes Open-World-Rollenspiel, das dir die
+              Freiheit gibt, deine eigene Geschichte zu schreiben. Du übernimmst
+              die Kontrolle über eine Gruppe von Söldnern und erkundest eine
+              riesige, handgefertigte Welt voller Geheimnisse, Herausforderungen
+              und Abenteuer. In diesem Leitfaden erfährst du alles, was du
+              wissen musst, um erfolgreich zu sein.
+            </p>
+          </div>
+        </section>
+
+        <!-- Gameplay Mechanics Section -->
+        <section id="gameplay" class="tab-content hidden space-y-8">
+          <div class="p-6 md:p-8 section-card">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">
+              Spielmechanik
+            </h2>
+            <div id="wt-accordion-container" class="space-y-4">
+              <!-- Accordion Items werden per JS eingefügt -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Character Development / Trupp Manager Section -->
+        <section id="character" class="tab-content hidden space-y-8">
+          <div class="p-6 md:p-8 section-card">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">
+            ❗WiP Dieser Teil der Seite ist eine erste idee so eine art Proof of Concept ❗ <br></br>
+            Trupp Manager & Charakterentwicklung
+            </h2>
+            <div id="character-builder" class="space-y-6">
+              <!-- Schritt 1: Klasse wählen -->
+              <div>
+                <label for="class-select" class="block font-semibold mb-2"
+                  >1. Wähle eine Klasse:</label
+                >
+                <select
+                  id="class-select"
+                  class="w-full max-w-xs border border-slate-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                >
+                  <option value="">-- Klasse wählen --</option>
+                  <option value="archer">Archer</option>
+                  <option value="brute">Brute</option>
+                  <option value="ranger">Ranger</option>
+                  <option value="spearman">Spearman</option>
+                  <option value="Swordsman">Swordsman</option>
+                  <option value="warrior">Warrior</option>
+                </select>
+              </div>
+
+              <!-- Schritt 2: Skills wählen -->
+              <div id="skilltree-section" class="hidden">
+                <label class="block font-semibold mb-2">2. Wähle einen Skill:</label>
+                <div id="skill-options"></div>
+                <div id="skilltree-table" class="mt-6"></div>
+              </div>
+
+              <!-- Schritt 3: Charakter erstellen -->
+              <div id="create-character-section" class="hidden">
+                <button
+                  id="create-character-btn"
+                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded shadow transition"
+                >
+                  Charakter erstellen
+                </button>
+              </div>
+
+              <!-- Schritt 4: Trupp anzeigen -->
+              <div id="squad-section" class="mt-8">
+                <h3 class="text-xl font-bold mb-2">Dein Trupp</h3>
+                <ul id="squad-list" class="mb-4 list-disc pl-6 bg-slate-50 rounded p-3"></ul>
+                <div id="squad-analysis" class="text-slate-700 bg-slate-100 rounded p-3"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Tips for New Players Section -->
+        <section id="tips" class="tab-content hidden space-y-8">
+          <div class="p-6 md:p-8 section-card">
+            <h2 class="text-2xl font-bold mb-4 text-slate-900">
+              Tipps für neue Spieler
+            </h2>
+            <p class="text-slate-700 leading-relaxed">
+              - Plane deine Züge sorgfältig und nutze die Umgebung zu deinem
+              Vorteil.<br />
+              - Achte auf die Moral deiner Söldner, da sie die Leistung im Kampf
+              beeinflusst.<br />
+              - Erkunde die Welt gründlich, um wertvolle Ressourcen und Quests
+              zu finden.<br />
+              - Scheue dich nicht, deine Taktiken anzupassen, wenn du auf neue
+              Herausforderungen stößt.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="text-center mt-12 text-sm text-slate-500">
+        <p></p>
+      </footer>
+    </div>
+
+    <script src="wartales.js"></script>
+  </body>
+</html>
